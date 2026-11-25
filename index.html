@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Climate Change and Animals – Grade 7</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Cairo:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e9f5f9;--card:#fff;--ink:#0b3c5d;--soft:#4a6b80;--teal:#1d9a8a;--amber:#f4a300;--leaf:#3e8e41;--red:#d64545;--line:#cfe4ec;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c2230;--card:#12344a;--ink:#e8f4f8;--soft:#9fc0d2;--line:#245068}}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Baloo 2","Segoe UI",sans-serif;font-size:17px;line-height:1.5}
+.ar{font-family:"Cairo","Segoe UI",Tahoma,sans-serif;direction:rtl;text-align:right}
+header{padding:20px 16px 8px;text-align:center}
+h1{margin:0;font-size:clamp(26px,6vw,40px);font-weight:800;line-height:1.1}
+.sub{color:var(--soft);margin:4px 0 0}
+.stars{display:inline-block;margin-top:8px;background:var(--card);border:2px solid var(--amber);border-radius:99px;padding:2px 16px;font-weight:700}
+nav{display:flex;gap:8px;overflow-x:auto;padding:10px 12px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5}
+nav button{flex:0 0 auto;border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:6px 16px;font:inherit;font-weight:700;cursor:pointer}
+nav button[aria-selected=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+main{max-width:860px;margin:0 auto;padding:8px 14px 40px}
+section{display:none}section.on{display:block}
+.card{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:16px;margin:0 0 14px}
+.card h2{margin:0 0 6px;font-size:22px}
+.polar{border-top:8px solid #4fb3d9}.panda{border-top:8px solid var(--leaf)}.gor{border-top:8px solid #7b4fb3}
+.emo{font-size:44px;line-height:1}
+.btn{border:0;border-radius:12px;padding:8px 14px;font:inherit;font-weight:700;cursor:pointer;background:var(--teal);color:#fff;margin:6px 6px 0 0}
+.btn.alt{background:var(--amber);color:#2b1b00}
+.tr{display:none;margin-top:10px;padding:10px;border-radius:12px;background:var(--bg)}
+.tr.show{display:block}
+.main{border:3px dashed var(--amber);text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.fc{perspective:700px;height:112px;cursor:pointer;border:0;background:none;padding:0;font:inherit;color:inherit}
+.fc i{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:14px;border:2px solid var(--line);background:var(--card);backface-visibility:hidden;transition:transform .45s;font-style:normal;text-align:center;padding:4px}
+.fc{position:relative}
+.fc i+i{transform:rotateY(180deg);background:var(--teal);color:#fff;border-color:var(--teal)}
+.fc.flip i{transform:rotateY(180deg)}.fc.flip i+i{transform:rotateY(360deg)}
+.fc small{opacity:.8}
+.pairs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pairs button{border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:10px 6px;font:inherit;font-weight:700;cursor:pointer;min-height:48px}
+.pairs button.sel{border-color:var(--amber);background:var(--amber);color:#2b1b00}
+.pairs button.ok{border-color:var(--leaf);background:var(--leaf);color:#fff;pointer-events:none}
+.pairs button.bad{border-color:var(--red);animation:sh .3s}
+@keyframes sh{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.q{font-weight:700;font-size:19px;margin:0 0 10px}
+.opt{display:block;width:100%;text-align:left;border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:10px 12px;margin:0 0 8px;font:inherit;cursor:pointer}
+.opt.ok{background:var(--leaf);border-color:var(--leaf);color:#fff}.opt.no{background:var(--red);border-color:var(--red);color:#fff}
+.fb{min-height:26px;font-weight:700}
+.bar{height:12px;background:var(--line);border-radius:9px;overflow:hidden;margin:0 0 12px}
+.bar b{display:block;height:100%;width:0;background:var(--teal);transition:width .4s}
+.bear{font-size:64px;text-align:center}
+.range{width:100%;accent-color:var(--teal)}
+.chk{display:flex;gap:10px;align-items:center;padding:10px;border-radius:12px;border:2px solid var(--line);margin:0 0 8px;cursor:pointer;background:var(--card)}
+.chk input{width:22px;height:22px;accent-color:var(--leaf)}
+textarea{width:100%;min-height:110px;border-radius:12px;border:2px solid var(--line);background:var(--card);color:var(--ink);padding:10px;font:inherit}
+.res{text-align:center;font-size:22px;font-weight:800}
+.flash{display:flex;gap:10px;flex-wrap:wrap}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Climate Change and Animals</h1>
+  <p class="sub ar">تغيّر المناخ والحيوانات – الصف السابع، الوحدة ٤، الدرس ٨</p>
+  <span class="stars" id="stars">⭐ 0</span>
+</header>
+<nav role="tablist" id="nav"></nav>
+<main>
+
+<section id="read">
+  <div class="card polar"><div class="emo">🐻‍❄️</div><h2>Sea ice and polar bears</h2>
+    <p id="t1">The sea ice in the Arctic is getting smaller each year. In some areas, it melts completely in the summer. This is causing problems for polar bears. These beautiful white bears go onto the sea ice to find their food. This means that they are in danger because they can’t find enough food to eat.</p>
+    <button class="btn" data-say="t1">🔊 Listen</button><button class="btn alt" data-tr="r1">ترجمة</button>
+    <div class="tr ar" id="r1">يصبح الجليد البحري في القطب الشمالي أصغر كل عام. وفي بعض المناطق، يذوب تمامًا في الصيف. وهذا يسبب مشاكل للدببة القطبية. هذه الدببة البيضاء الجميلة تصعد إلى الجليد للعثور على طعامها. وهذا يعني أنها في خطر لأنها لا تستطيع العثور على ما يكفي من الطعام لتأكله.</div></div>
+  <div class="card panda"><div class="emo">🐼</div><h2>Bamboo and giant pandas</h2>
+    <p id="t2">Giant pandas live in the mountains in south and central China. They eat bamboo, which is 90% of their diet. But bamboo grows very slowly, so climate change could cause problems. If there isn’t enough bamboo, then pandas won’t survive.</p>
+    <button class="btn" data-say="t2">🔊 Listen</button><button class="btn alt" data-tr="r2">ترجمة</button>
+    <div class="tr ar" id="r2">تعيش الباندا العملاقة في الجبال في جنوب ووسط الصين. وهي تأكل الخيزران، الذي يشكل ٩٠٪ من غذائها. لكن الخيزران ينمو ببطء شديد، لذلك قد يؤدي تغير المناخ إلى مشاكل. إذا لم يكن هناك ما يكفي من الخيزران، فإن الباندا لن تبقى على قيد الحياة.</div></div>
+  <div class="card gor"><div class="emo">🦍</div><h2>Global warming and diseases</h2>
+    <p id="t3">Scientists are worried because as the Earth gets hotter, there will be more diseases. These can be passed from humans to gorillas, so they might be in danger in the future. Mountain gorillas live in central Africa. In some ways, they can adapt well to climate change. They can live in high temperatures. But there are very few mountain gorillas left in the wild. We think there are only about 1,100, so we must protect them from diseases.</p>
+    <button class="btn" data-say="t3">🔊 Listen</button><button class="btn alt" data-tr="r3">ترجمة</button>
+    <div class="tr ar" id="r3">يقلق العلماء لأن الأرض تصبح أكثر حرارة، وسيكون هناك المزيد من الأمراض. يمكن أن تنتقل هذه الأمراض من البشر إلى الغوريلات، لذلك قد تكون في خطر في المستقبل. تعيش الغوريلات الجبلية في وسط أفريقيا. وهي تستطيع التكيف مع تغير المناخ بشكل جيد في بعض النواحي، ويمكنها العيش في درجات حرارة عالية. لكن لم يبق في البرية إلا عدد قليل جدًا من الغوريلات الجبلية. ونعتقد أن هناك حوالي ١١٠٠ فقط، لذلك يجب أن نحميها من الأمراض.</div></div>
+  <div class="card main"><h2>🎯 Main Idea</h2><p>Climate change is making it harder for some animals to survive, such as polar bears, pandas and mountain gorillas.</p>
+    <p class="ar">يجعل تغير المناخ من الصعب على بعض الحيوانات البقاء على قيد الحياة، مثل الدبة القطبية والباندا والغوريلات الجبلية.</p></div>
+  <div class="card"><h2>💡 Did you know?</h2>
+    <p>Polar bears can smell seals from far away. Slide to see how far!</p>
+    <div class="bear" id="bear">🐻‍❄️</div>
+    <input class="range" type="range" min="0" max="20" value="0" id="km" aria-label="Distance in km">
+    <p class="res" id="kmout">0 km</p>
+  </div>
+</section>
+
+<section id="vocab">
+  <div class="card"><h2>Flip the cards</h2><p class="sub ar">اضغط على البطاقة لتعرف المعنى، وسيُنطق الكلمة</p><div class="grid" id="cards"></div></div>
+  <div class="card"><h2>Match the words</h2><p class="sub ar">اختر الكلمة ثم معناها بالعربية</p>
+    <div class="bar"><b id="mbar"></b></div>
+    <div class="pairs"><div id="mL"></div><div id="mR"></div></div>
+    <p class="res" id="mres"></p><button class="btn alt" id="mre">Play again 🔄</button></div>
+</section>
+
+<section id="quiz">
+  <div class="card"><div class="bar"><b id="qbar"></b></div><p class="sub" id="qn"></p><p class="q" id="qq"></p><div id="qo"></div><p class="fb" id="qf"></p><button class="btn" id="qnext" style="display:none">Next</button></div>
+</section>
+
+<section id="gap">
+  <div class="card"><h2>Fill in the gaps</h2><p class="sub ar">أكمل الجملة بالكلمة المناسبة</p><div id="gaps"></div><p class="res" id="gres"></p></div>
+</section>
+
+<section id="project">
+  <div class="card"><h2>👥 Project: Write an Action Plan</h2>
+    <p>In groups, choose an endangered animal (e.g. polar bear, panda, gorilla) and write an action plan to help it.</p>
+    <div class="bar"><b id="pbar"></b></div>
+    <div id="steps"></div>
+    <textarea id="plan" placeholder="Our animal is… We will…"></textarea>
+    <p class="sub ar">اكتب خطة مجموعتك هنا ثم اعرضها أمام الصف.</p>
+    <p class="res" id="pres"></p></div>
+</section>
+</main>
+
+<script>
+var score=0,done={};
+function star(k,n){if(done[k])return;done[k]=1;score+=n;document.getElementById('stars').textContent='⭐ '+score}
+function $(i){return document.getElementById(i)}
+function say(t){try{speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=.85;speechSynthesis.speak(u)}catch(e){}}
+// tabs
+var tabs=[['read','📖 Read'],['vocab','🔤 Words'],['quiz','❓ Quiz'],['gap','✏️ Gaps'],['project','🌍 Project']];
+tabs.forEach(function(t,i){var b=document.createElement('button');b.textContent=t[1];b.setAttribute('role','tab');b.setAttribute('aria-selected',i==0);b.onclick=function(){
+ tabs.forEach(function(x,j){$(x[0]).classList.toggle('on',j==i);$('nav').children[j].setAttribute('aria-selected',j==i)});window.scrollTo(0,0)};$('nav').appendChild(b)});
+$('read').classList.add('on');
+// read
+document.querySelectorAll('[data-say]').forEach(function(b){b.onclick=function(){say($(b.dataset.say).textContent);star('l'+b.dataset.say,1)}});
+document.querySelectorAll('[data-tr]').forEach(function(b){b.onclick=function(){$(b.dataset.tr).classList.toggle('show')}});
+$('km').oninput=function(){var v=+this.value;$('kmout').textContent=v+' km';$('bear').textContent=v>=16?'🐻‍❄️👃🦭':'🐻‍❄️';if(v>=16){$('kmout').textContent='16 km! Amazing sense of smell! 🎉 ١٦ كيلومترًا!';star('km',2)}};
+// vocab
+var V=[['climate change','تغير المناخ','noun'],['extinct','منقرض','adjective'],['Arctic','القطب الشمالي','noun'],['melt','يذوب','verb'],['completely','بشكل كامل','adverb'],['cause','يسبب','verb'],['diet','نظام غذائي','noun'],['slowly','ببطء','adverb'],['survive','يبقى على قيد الحياة','verb'],['disease','مرض','noun'],['adapt','يتكيف','verb'],['protect','يحمي','verb']];
+V.forEach(function(v){var b=document.createElement('button');b.className='fc';b.innerHTML='<i><b>'+v[0]+'</b><small>'+v[2]+'</small></i><i class="ar"><b>'+v[1]+'</b></i>';b.onclick=function(){b.classList.toggle('flip');say(v[0]);star('fc'+v[0],1)};$('cards').appendChild(b)});
+var sel=null,got=0,N=6,set;
+function shuffle(a){return a.slice().sort(function(){return Math.random()-.5})}
+function match(){got=0;sel=null;$('mres').textContent='';$('mbar').style.width='0';set=shuffle(V).slice(0,N);$('mL').innerHTML='';$('mR').innerHTML='';
+ shuffle(set).forEach(function(v){mk('mL',v[0],v[0],'')});shuffle(set).forEach(function(v){mk('mR',v[1],v[0],'ar')})}
+function mk(p,t,id,c){var b=document.createElement('button');b.textContent=t;b.className=c;b.style.marginBottom='8px';b.style.display='block';b.style.width='100%';b.dataset.id=id;b.dataset.side=p;
+ b.onclick=function(){if(p=='mL')say(t);
+  if(sel&&sel.dataset.side==p){sel.classList.remove('sel');sel=b;b.classList.add('sel');return}
+  if(!sel){sel=b;b.classList.add('sel');return}
+  if(sel.dataset.id==id){sel.className=sel.className.replace('sel','')+' ok';b.className+=' ok';got++;$('mbar').style.width=got/N*100+'%';sel=null;if(got==N){$('mres').textContent='🎉 Excellent! أحسنت!';star('match',3)}}
+  else{var o=sel;o.classList.remove('sel');b.classList.add('bad');setTimeout(function(){b.classList.remove('bad')},400);sel=null}};
+ $(p).appendChild(b)}
+$('mre').onclick=match;match();
+// quiz
+var Q=[
+['Why are polar bears in danger?',['They can’t find enough food on the sea ice.','They are too hot in winter.','They don’t like swimming.'],0,'Sea ice is melting, so they can’t reach their food.'],
+['Why is bamboo important for pandas?',['It is 90% of their diet.','They sleep in it.','They drink it.'],0,'Pandas get 90% of their food from bamboo.'],
+['What are scientists worried about for gorillas?',['More diseases from humans as the Earth gets hotter.','Too much snow.','Too many gorillas.'],0,'Diseases can pass from humans to gorillas.'],
+['What can we do to help these animals?',['Protect their habitat and learn about them.','Ignore the problem.','Cut down their forests.'],0,'We can protect habitats, make posters and give talks.'],
+['What does “survive” mean?',['To stay alive','To melt','To adapt to a school'],0,'survive = يبقى على قيد الحياة'],
+['How many mountain gorillas are left in the wild?',['About 1,100','About 11,000','About 110'],0,'We think there are only about 1,100.'],
+['Bamboo grows very ______.',['slowly','completely','extinct'],0,'“slowly” is an adverb.'],
+['Which is the main idea of the lesson?',['Climate change makes survival harder for some animals.','Bamboo is delicious.','Gorillas live in China.'],0,'Climate change is making it harder for some animals to survive.']];
+var qi=0,qs=0,order;
+function shuf(a){return a.map(function(x,i){return i}).sort(function(){return Math.random()-.5})}
+function ask(){var q=Q[qi];$('qn').textContent='Question '+(qi+1)+' / '+Q.length;$('qq').textContent=q[0];$('qf').textContent='';$('qnext').style.display='none';$('qbar').style.width=qi/Q.length*100+'%';$('qo').innerHTML='';
+ shuf(q[1]).forEach(function(i){var b=document.createElement('button');b.className='opt';b.textContent=q[1][i];b.onclick=function(){
+  if($('qnext').style.display=='block')return;var right=i==q[2];b.classList.add(right?'ok':'no');
+  if(!right)Array.prototype.forEach.call($('qo').children,function(c){if(c.textContent==q[1][q[2]])c.classList.add('ok')});
+  if(right)qs++;$('qf').textContent=(right?'✅ Correct! ':'❌ Not quite. ')+q[3];$('qnext').style.display='block';$('qnext').textContent=qi==Q.length-1?'See result':'Next'};$('qo').appendChild(b)})}
+$('qnext').onclick=function(){qi++;if(qi<Q.length)return ask();
+ $('qbar').style.width='100%';$('qn').textContent='';$('qq').textContent='You got '+qs+' / '+Q.length+(qs>=7?' 🏆':qs>=5?' 👍':' 💪');$('qo').innerHTML='';$('qf').textContent=qs>=7?'Climate hero! بطل المناخ!':'Read again and try once more. أعد المحاولة!';star('quiz',qs);
+ $('qnext').textContent='Try again';$('qnext').onclick=function(){location.reload()}};
+ask();
+// gaps
+var G=[['The sea ice in the ______ is getting smaller.','Arctic',['Arctic','diet','slowly']],['Ice ______ in the summer when it gets hot.','melts',['melts','survives','protects']],['Climate change can ______ problems for animals.','cause',['cause','adapt','extinct']],['If there isn’t enough bamboo, pandas won’t ______.','survive',['survive','melt','cause']],['Diseases can pass from humans to gorillas, so we must ______ them.','protect',['protect','melt','adapt']]];
+var gd=0;
+G.forEach(function(g,k){var d=document.createElement('div');d.className='card';d.style.padding='12px';var p=document.createElement('p');p.className='q';p.textContent=g[0];d.appendChild(p);
+ shuffle(g[2]).forEach(function(w){var b=document.createElement('button');b.className='btn alt';b.textContent=w;b.onclick=function(){
+  if(d.dataset.ok)return;if(w==g[1]){d.dataset.ok=1;p.textContent=g[0].replace('______',w)+' ✅';b.style.background='var(--leaf)';b.style.color='#fff';gd++;star('g'+k,1);if(gd==G.length)$('gres').textContent='🎉 All done! أحسنت!'}else{b.style.background='var(--red)';b.style.color='#fff'}};d.appendChild(b)});$('gaps').appendChild(d)});
+// project
+var S=['Learn more about the animal.','Protect its natural habitat.','Organise a school activity (e.g. a poster, a talk).','Present your plan to the class.'],pc=0;
+S.forEach(function(s,k){var l=document.createElement('label');l.className='chk';l.innerHTML='<input type="checkbox"><span>'+s+'</span>';l.firstChild.onchange=function(){pc=document.querySelectorAll('#steps input:checked').length;$('pbar').style.width=pc/S.length*100+'%';if(pc==S.length){$('pres').textContent='🌍 Great plan! خطة رائعة!';star('proj',3)}else $('pres').textContent=''};$('steps').appendChild(l)});
+</script>
+</body>
+</html>
